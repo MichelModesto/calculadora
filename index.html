@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="resultado">
+            <div class="view-calc">1 + 1</div>
+            <div class="igual">
+                <input id="resultado"type="text" class="n-resultado3" placeholder="0" disabled="disabled" />
+            </div>
+        </div>
+        <div class="numeros">
+            <div class="coluna1">
+                <button onclick="calcular('acao','c')" class="botoes-CE">CE</button>
+                <button onclick="calcular('valor', 7)" class="botoes">7</button>
+                <button onclick="calcular('valor', 4)" class="botoes">4</button>
+                <button onclick="calcular('valor', 1)" class="botoes">1</button>
+                <button onclick="calcular('acao','+/-')" class="botoes">+/-</button>
+            </div>
+            <div class="coluna1">
+                <button onclick="calcular('acao', 'c')" class="botoes">C</button>
+                <button onclick="calcular('valor', 8)" class="botoes">8</button>
+                <button onclick="calcular('valor', 5)" class="botoes">5</button>
+                <button onclick="calcular('valor', 2)" class="botoes">2</button>
+                <button onclick="calcular('valor', 0)" class="botoes">0</button>
+            </div>
+            <div class="coluna1">
+                <button onclick="calcular('acao','%')" class="botoes">%</button>
+                <button onclick="calcular('valor', 9)" class="botoes">9</button>
+                <button onclick="calcular('valor', 6)" class="botoes">6</button>
+                <button onclick="calcular('valor', 3)" class="botoes">3</button>
+                <button onclick="calcular('acao', ',')" class="botoes">,</button>
+            </div>
+            <div class="coluna1">
+                <button onclick="calcular('acao', '/')" class="botoes-sinais">÷</button>
+                <button onclick="calcular('acao', '*')" class="botoes-sinais">x</button>
+                <button onclick="calcular('acao', '-')" class="botoes-sinais">-</button>
+                <button onclick="calcular('acao', '+')" class="botoes-sinais">+</button>
+                <button onclick="calcular('acao', '=')" class="botao-igual">=</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
