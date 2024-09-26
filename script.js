@@ -6,8 +6,13 @@ function calcular(tipo, valor){
         //limpar o visor(id resultado)
         document.getElementById('resultado').value = ''
       }
+
+      if(valor === 'delete'){
+        //limpar o visor(id resultado)
+        document.getElementById('resultado').value = ''
+      }
         
-      if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
+      if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === ','){
         document.getElementById('resultado').value += valor
       }
       

@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     border-radius: 48px;
     overflow: hidden;
     background: #2D2A37;
@@ -36,7 +37,7 @@ body {
     align-items: flex-end;
     /* background-color: rgb(255, 0, 0); */
     color: azure;
-    margin: 40px 15px 0 15px;
+    margin: 0.3125rem 0.9375rem 0 0.9375rem;
     width: 100%;
     height: 25%;
     overflow: auto;
@@ -48,7 +49,7 @@ body {
     opacity: 50%;
 }
 
-input{
+input {
     border: none;
 }
 
@@ -56,16 +57,36 @@ input:disabled {
     cursor: text;
 }
 
+#resultado {
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.81rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2D2A37;
+}
+
+#resultado .n-resultado3 {
+    width: 100%;
+}
+
+.igual {
+    width: 100%;
+    height: 45%;
+    padding: 0 2.3rem 0 2.8rem;
+}
+
 .n-resultado3 {
-    width: 81vw;
-    height: 5vh;
+    /* width: 100%;
+    height: 5vh; */
     font-family: "Rubik", sans-serif;
     font-size: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 3rem 0 3rem;
     background-color: #2D2A37;
+    padding: 0 0rem 0 0;
 }
 
 .sinal {
@@ -157,6 +178,7 @@ input:disabled {
     border-radius: 999px;
     background-color: #2D2A37;
     padding: 5px;
+    font-size: 1.4rem;
     color: #975DFA;
     cursor: pointer;
     border: none;
@@ -167,5 +189,44 @@ input:disabled {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 2560px) {
+    .view-calc{
+        font-size: large;
+    }
+    
+    #resultado{
+        font-size: 6rem;
+    }    
+    
+    .numeros{
+        justify-content: space-between;
+        padding: 0 3rem 0 3rem;
+    }
+    
+    .botoes {
+        width: 108px;
+        height: 108px;
+        font-size: 2.1rem;
+    }
+
+    .botoes-sinais {
+        width: 108px;
+        height: 108px;
+        font-size: 2.1rem;
+    }
+
+    .botao-igual {
+        width: 108px;
+        height: 108px;
+        font-size: 2.1rem;
+    }
+
+    .botoes-CE {
+        width: 108px;
+        height: 108px;
+        font-size: 2.1rem;
+    }
 }
 
